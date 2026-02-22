@@ -1,4 +1,4 @@
- package com.midev.coursespringbootjpa.repositories;
+package com.midev.coursespringbootjpa.repositories;
 
 import com.midev.coursespringbootjpa.entities.Category;
 import com.midev.coursespringbootjpa.entities.User;
