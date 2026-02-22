@@ -1,6 +1,6 @@
 package com.midev.coursespringbootjpa.resources;
 
-import com.midev.coursespringbootjpa.entities.entities.User;
+import com.midev.coursespringbootjpa.entities.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

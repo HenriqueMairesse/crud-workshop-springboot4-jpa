@@ -1,4 +1,4 @@
-package com.midev.coursespringbootjpa.entities.entities;
+package com.midev.coursespringbootjpa.entities;
 
 import jakarta.persistence.*;
 
