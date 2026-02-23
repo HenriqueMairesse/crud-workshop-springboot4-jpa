@@ -2,8 +2,10 @@ package com.midev.coursespringbootjpa.services;
 
 import com.midev.coursespringbootjpa.entities.User;
 import com.midev.coursespringbootjpa.repositories.UserRepository;
+import com.midev.coursespringbootjpa.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.ResourceAccessException;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +22,7 @@ public class UserService {
 
     public User findById(Long id) {
         Optional<User> obj = repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public User insert(User obj) {
