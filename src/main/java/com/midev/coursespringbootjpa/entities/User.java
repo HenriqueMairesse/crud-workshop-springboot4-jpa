@@ -28,7 +28,7 @@ public class User implements Serializable {
     @JsonIgnore
     private List<Order> orders = new ArrayList<>();
 
-    private User() {
+    public User() {
 
     }
 
